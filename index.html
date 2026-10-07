@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Aking Unang JavaScript</title>
+    <title>Cuyos Dog Information</title>
 </head>
+
 <body>
-  <h1>JavaScript Demo</h1>
 
-  <script>
-    // 1. Maglagay ng variables
-    let dogName = "Cuyos";
-    let dogAge = 4;
-    let humanYears = dogAge * 7;
+    <h1>🐶 Dog Information</h1>
 
-    // 2. Pumili ng random na numero (1 hanggang 3)
-    let randomToy = Math.floor(Math.random() * 3) + 1;
+    <button onclick="showDogInfo()">Show Information</button>
 
-    // 3. I-print ang resulta sa console
-    console.log("Pangalan ng Aso: " + dogName);
-    console.log("Edad sa Human Years: " + humanYears);
-    console.log("Napiling Laruan #: " + randomToy);
-  </script>
+    <p id="result"></p>
+
+    <script>
+        function showDogInfo() {
+
+            // Dog information
+            let dogName = "Cuyos";
+            let dogAge = 4;
+
+            // Calculate human age
+            let humanYears = dogAge * 7;
+
+            // Choose a random toy from 1 to 3
+            let randomToy = Math.floor(Math.random() * 3) + 1;
+
+            // Display the information
+            document.getElementById("result").innerHTML =
+                "🐕 Dog's Name: " + dogName + "<br>" +
+                "🎂 Dog's Age: " + dogAge + " years old<br>" +
+                "📅 Human Age: " + humanYears + " years old<br>" +
+                "🎾 Random Toy: Toy #" + randomToy;
+        }
+    </script>
+
 </body>
 </html>
