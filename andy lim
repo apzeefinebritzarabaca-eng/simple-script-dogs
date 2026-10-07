@@ -1,0 +1,14 @@
+let dogName = "Cuyos";
+let dogAgeInDogYears = 4;
+let humanYearsPerDogYear = 7;
+
+// 2. Use a mathematical operation (*)
+let totalHumanYears = dogAgeInDogYears * humanYearsPerDogYear;
+
+// 3. Use the Math object (Math.random) to pick a random toy number from 1 to 3
+let randomToyNumber = Math.floor(Math.random() * 3) + 1;
+
+// Output the results to the console
+console.log("Dog's Name: " + dogName);
+console.log("Age in human years: " + totalHumanYears);
+console.log("Lucky toy number today: " + randomToyNumber);
